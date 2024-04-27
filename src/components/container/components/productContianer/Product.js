@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './product.css'
 
-function Product({value, name, decreaseTheMoney, increaseTheMoney , unique, moneyAmount, img}) {
+function Product({id, value, name, decreaseTheMoney, increaseTheMoney , unique, moneyAmount, img}) {
   const newvalue = new Intl.NumberFormat('en-US', {style : "decimal" }).format(value);
 
   const [buyAmount , setBuyAmount] = useState(0)
@@ -16,7 +16,7 @@ function Product({value, name, decreaseTheMoney, increaseTheMoney , unique, mone
     let newAmount = buyAmount-1
     setBuyAmount(newAmount)
 
-    let productInfo = {name : name, amount : newAmount , value : value}
+    let productInfo = {name : name, amount : newAmount , value : value, id: id}
 
     increaseTheMoney(productInfo)
   }
@@ -41,7 +41,7 @@ function Product({value, name, decreaseTheMoney, increaseTheMoney , unique, mone
         <span className='product__price'>{newvalue}</span>
         <div className='product__btns'>
             <button className={`btn ${buyAmount > 0 ? 'product__btns__sellBtnActive' : 'product__btns__sellBtnUnActive'}`} onClick={sellFunction}>فروش</button>
-            <input className='product__btns__amount' value={buyAmount} type='text'/>
+            <input className='product__btns__amount' value={buyAmount} type='text' readOnly/>
             <button className={`btn ${((buyAmount == 1  && unique) || moneyAmount < value) ? 'product__btns__buyBtnUnActive' : 'product__btns__buyBtnActive'}`} onClick={buyFunction}>خرید</button>
         </div>
     </div>

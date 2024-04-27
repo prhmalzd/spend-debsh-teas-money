@@ -15,7 +15,7 @@
 }
 
 .receipt__total {
-    width: 20vw;
+    gap: 20px;
     padding: 20px 0 10px 0;
     display: flex;
     justify-content: space-evenly;
@@ -23,13 +23,13 @@
 }
 
 .oneReceipt {
-    width: 20vw;
+    gap: 20px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 
-.oneReceipt span , .receipt__total__title {
+.oneReceipt span , .receipt__total span {
     font-weight: 600; 
     font-size: 20px;
 }
@@ -44,4 +44,11 @@
     height: 2px;
     width: 20vw;
     background-color: black;
+}
+
+
+@media only screen and (max-width: 500px) {
+    .oneReceipt span , .receipt__total span {
+        font-size: 15px;
+    }
 }

@@ -9,6 +9,8 @@ function ProductContainer({decreaseTheMoney, increaseTheMoney, moneyAmount}) {
       {
         productsInfo.map(elem => {
           return <Product
+          key={elem.id}
+          id={elem.id}
           name={elem.name}
           value = {elem.value}
           decreaseTheMoney={decreaseTheMoney}

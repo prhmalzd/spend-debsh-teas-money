@@ -51,6 +51,7 @@ function Receipt({productInfo}) {
             {
                 receiptInfo.map(elem => {
                     return <OneReceipt
+                    key={elem.id}
                     name={elem.name}
                     amount={elem.amount}
                     value={elem.value}
