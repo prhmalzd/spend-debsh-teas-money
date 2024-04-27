@@ -52,3 +52,11 @@
         font-size: 15px;
     }
 }
+
+
+
+@media only screen and (max-width: 500px) {
+    .oneReceipt span , .receipt__total span {
+        font-size: 10px;
+    }
+}

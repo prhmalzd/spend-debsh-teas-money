@@ -11,3 +11,9 @@
     color: black;
     cursor: pointer;
 }
+
+@media only screen and (max-width: 400px) {
+    .copyRight a , .copyRight span {
+        font-size: 10px;
+    }
+}
