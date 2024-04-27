@@ -1,0 +1,47 @@
+.receipt {
+    width: 65vw;
+    margin-top: 30px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.receipt__title {
+    font-size: 50px;
+    font-weight: 700;
+    padding: 20px 0;
+}
+
+.receipt__total {
+    width: 20vw;
+    padding: 20px 0 10px 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.oneReceipt {
+    width: 20vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.oneReceipt span , .receipt__total__title {
+    font-weight: 600; 
+    font-size: 20px;
+}
+
+.oneReceipt__amount , .receipt__total__amount{
+    color: rgb(33, 172, 75);
+    font-weight: 900;
+}
+
+.receipte__line {
+    margin: 20px 0 0 0;
+    height: 2px;
+    width: 20vw;
+    background-color: black;
+}

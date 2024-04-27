@@ -1,0 +1,17 @@
+.moneyAmount {
+    height: 100px;
+    width: 65vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(25, 117, 25);
+    position: sticky;
+    top: 0;
+}
+
+.moneyAmount__title {
+    color: white;
+    font-weight: 900;
+    font-size: 40px;
+}

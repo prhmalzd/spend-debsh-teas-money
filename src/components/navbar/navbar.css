@@ -1,0 +1,15 @@
+.navbar {
+    width: 100vw;
+    height: 100px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar__span {
+    font-size: 50px;
+    width: 65vw;
+    font-weight: 700;
+}
+

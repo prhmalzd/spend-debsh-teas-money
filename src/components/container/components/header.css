@@ -1,0 +1,22 @@
+.header {
+    width: 65vw;
+    height: 350px;
+    margin-top: 30px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.header__picture {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(80, 80, 189);
+}
+
+.header__title {
+    font-size: 30px;
+    text-align: center;
+}
